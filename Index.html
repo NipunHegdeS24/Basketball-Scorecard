@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scorecard</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .container{
+            height:100VH;
+            background-color: purple;
+        }
+        h1,h2{
+            color: white;
+            text-align: center;
+            padding: 60px;
+            font-size: 70px;
+        }
+        h3{
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+        }
+        .box{
+            width:300px;
+            height: 400px;
+            border: 2px solid white;
+            margin-left: 230px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        button{
+            padding: 10px;
+            margin-left: 22px;
+            border-radius: 10px;
+            background-color: purple;
+            color: white;
+            border: 1px solid white;
+        }
+        .Value{
+            width:200px;
+            height:200px;
+            border: 1px solid white;
+            margin:0 auto 25px auto ;
+            background-color: black;
+            border-radius: 20px;
+        }
+        h2{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SCORECARD</h1>
+        <div class="box Home">
+            <h3>HOME</h3>
+            <div class="Value">
+                <h2 id="HomeValue">0</h2>
+            </div>
+            <button onclick="homePlusOne()">+1</button>
+            <button onclick="homePlusTwo()">+2</button>
+            <button onclick="homePlusThree()">+3</button>
+            <button onclick="homeReset()">RESET</button>
+        </div>
+        <div class="box Away">
+            <h3>AWAY</h3>
+            <div class="Value">
+                <h2 id="AwayValue">0</h2>
+            </div>
+            <button onclick="awayPlusOne()">+1</button>
+            <button onclick="awayPlusTwo()">+2</button>
+            <button onclick="awayPlusThree()">+3</button>
+            <button onclick="awayReset()">RESET</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
